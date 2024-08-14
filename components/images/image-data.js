@@ -1,6 +1,6 @@
 
 import SamsungS24 from "@/assets/samsung-s24-ultra.jpg";
-import SamsungA55 from "@/assets/samsung a55 5g.jpg";
+import SamsungA55 from "@/assets/samsung-a55-5g.jpg";
 import Iphone14 from "@/assets/iphone-14.jpg";
 import Iphone15 from "@/assets/iphone-15.jpg"
 import OppoA78 from "@/assets/oppo-a-78-4g.jpg"
