@@ -1,13 +1,15 @@
-import Image from "next/image";
+//import Image from "next/image";
 import Link from "next/link";
-import imageSample from "@/assets/headerImage.png"
+//import imageSample from "@/assets/headerImage.png"
+import ImageSlider from "@/components/images/image-slide";
+import classes from "./page.module.css"
 export default function Home() {
   return (
     <>
-    <header className = " text-white">
+    <header className = " text-white mt-2 mb-10">
       <div className = " flex  justify-center items-center gap-[150px]">
-        <div>
-          <Image src = {imageSample} alt = "sample Image" className = " w-[20rem]" />
+        <div className = {classes.slider}>
+          <ImageSlider />
         </div>
         <div>
           <div className = " mb-5">
@@ -28,27 +30,27 @@ export default function Home() {
       </div>
     </header>
     
-    <main className = " text-white">
-        <section>
-          <h1>How it Works</h1>
-          <p>
-            TechWave Gadgets is a platform that can you share your favorite gadgets and   
+    <main className = " text-white flex flex-col justify-center items-center">
+        <section className = " my-10 ">
+          <h1 className = "text-center font-bold text-5xl text-gray-600 mb-3">How it Works</h1>
+          <p className = " text-center text-xl font-semibold mb-3 text-gray-500">
+            TechWave Gadgets is a platform that can you share your favorite gadgets and  <br /> 
             It&apos;s a place to discover new gadgets.
           </p>
 
-          <p>
+          <p className = " text-center font-semibold text-xl text-gray-500">
             TechWave Gadgets is a place to discover new gadgets, and to connect
             with other's.
           </p>
         </section>
 
         <section>
-          <h1>Why TechWave?</h1>
-          <p>
-            TechWave Gadgets is a platform that can you share your favorite gadgets and   
+          <h1 className = "text-center font-bold text-5xl text-gray-600 mb-3">Why TechWave?</h1>
+          <p className = " text-center text-xl font-semibold mb-3 text-gray-500">
+            TechWave Gadgets is a platform that can you share your favorite gadgets and <br />  
             It&apos;s a place to discover new gadgets.
           </p>
-          <p>
+          <p className = " text-center font-semibold text-xl text-gray-500 mb-10">
             TechWave Gadgets is a place to discover new gadgets, and to connect
             with other's.
           </p>
@@ -62,3 +64,6 @@ export default function Home() {
     
   );
 }
+
+
+{/*<Image src = {imageSample} alt = "sample Image" className = " w-[20rem]" /> */}

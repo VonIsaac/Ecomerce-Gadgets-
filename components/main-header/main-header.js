@@ -6,7 +6,7 @@ const MainHeader = () => {
 
 
     return(
-        <header className = " flex justify-around items-center mb-8 mt-1 bg-neutral-100 py-5 border-md">
+        <header className = " flex justify-around items-center mb-8 mt-1 bg-neutral-100 py-3 border-md">
             <Link href = "/">
 
                 <Image src = {ImageHeader} alt = "A header Icon"  className = " w-[10rem]"/>
