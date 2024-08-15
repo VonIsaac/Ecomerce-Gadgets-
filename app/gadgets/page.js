@@ -23,7 +23,7 @@ const MainGadgets = async () => {
                </p>
             </header>
 
-            <main>
+            <main className = " flex justify-center items-center">
                 <GadgetGrid gadget={gadget} />
             </main>
         
