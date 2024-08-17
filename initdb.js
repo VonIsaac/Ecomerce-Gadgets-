@@ -7,7 +7,10 @@ const dummyGadgets = [
     slug: 'samsungS24',
     image: '/images/samsung-s24-ultra.jpg',
     summary:
-      'The Samsung Galaxy S24 is a powerful device with significant improvements over its predecessor.',
+      `
+        The Samsung Galaxy S24 is a powerful 
+          device with significant improvements over its predecessor.
+      `,
     opinion: `
       1. Display Brightness: The 6.2-inch Dynamic AMOLED 2X display with a peak brightness of 2,600 nits is a standout feature. 
             It provides a clear and vivid viewing experience, even in bright sunlight.
@@ -29,7 +32,10 @@ const dummyGadgets = [
     slug: 'samsungA55',
     image: '/images/samsung-a55-5g.jpg',
     summary:
-      'The Samsung Galaxy A55 5G is a solid mid-range smartphone that combines a sleek design with impressive features at a competitive price.',
+      `
+        The Samsung Galaxy A55 5G is a solid 
+          mid-range smartphone that combines a sleek design with impressive features at a competitive price.
+      `,
     opinion: `
       1. Premium Design: Despite being a mid-range phone, 
             the A55 5G has a premium feel with its aluminum frame and Gorilla Glass, offering a sturdy build.
@@ -54,7 +60,10 @@ const dummyGadgets = [
     slug: 'iphone14',
     image: '/images/iphone-14.jpg',
     summary:
-      'The iPhone 14 offers a 6.1-inch Super Retina XDR OLED display, powered by the A15 Bionic chip with 5G support.',
+      `
+        The iPhone 14 offers a 6.1-inch Super Retina 
+          XDR OLED display, powered by the A15 Bionic chip with 5G support.
+      `,
     opinion: `
       1. Performance: Powered by the A15 Bionic chip, 
             the iPhone 14 delivers fast performance, handling multitasking and demanding apps with ease.
@@ -75,7 +84,10 @@ const dummyGadgets = [
     slug: 'iphone15',
     image: '/images/iphone-15.jpg',
     summary:
-      "The iPhone 15, released in September 2023, introduces several key updates and features.",
+      `
+        The iPhone 15, released in September 2023,
+         introduces several key updates and features.
+      `,
     opinion: `
       1. Enhanced Performance: It features the A17 Pro chip, 
             which provides faster performance and improved efficiency compared to previous models.
@@ -99,7 +111,10 @@ const dummyGadgets = [
     slug: 'oppoA78',
     image: '/images/oppo-a-78-4g.jpg',
     summary:
-      'The Oppo A78 4G is a budget-friendly smartphone offering a balance of performance and features. ',
+      `
+        The Oppo A78 4G is a budget-friendly 
+          smartphone offering a balance of performance and features.
+      `,
     opinion: `
       1. Display: A large, vibrant screen with good color accuracy for its price range.
 
@@ -117,7 +132,10 @@ const dummyGadgets = [
     slug: 'infinixNote40',
     image: '/images/infinix-note-40.jpg',
     summary:
-      'The Infinix Note 40 is a mid-range smartphone that offers a good mix of features and performance. ',
+      `
+        The Infinix Note 40 is a mid-range smartphone 
+          that offers a good mix of features and performance.
+      `,
     opinion: `
       1. Display: A large, high-resolution screen that provides vibrant visuals and a good viewing experience.
 
@@ -135,7 +153,10 @@ const dummyGadgets = [
     slug: 'googlePixel6',
     image: '/images/google-pixel6.jpg',
     summary:
-      'The Google Pixel 6 is a flagship smartphone that emphasizes Google software and AI capabilities.',
+      `
+        The Google Pixel 6 is a flagship smartphone 
+          that emphasizes Google software and AI capabilities.
+      `,
     opinion: `
       1. Display: A high-quality OLED screen with vibrant colors and sharp resolution.
     
