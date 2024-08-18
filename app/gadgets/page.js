@@ -3,7 +3,7 @@ import Link from "next/link"
 import GadgetGrid from "@/components/gadget/gadget-grid"
 import { getGadgets } from "@/lib/gadgets"
 const MainGadgets = async () => {
-
+    // Then use async await as well
     const gadget = await getGadgets()
     return (
         <>
@@ -23,6 +23,7 @@ const MainGadgets = async () => {
                </p>
             </header>
 
+            {/* then import the component to this components and use the props then pass the gadget await  */}
             <main className = " flex justify-center items-center">
                 <GadgetGrid gadget={gadget} />
             </main>

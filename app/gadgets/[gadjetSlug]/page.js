@@ -2,14 +2,18 @@ import Image from "next/image"
 import { getGadget } from "@/lib/gadgets"
 
 const GadgetsSlug = ({params}) => {
+    // and use the key params and then pass to getGadget as parameter that i import to lib/gadgets
     const gadget = getGadget(params.gadjetslug)
 
+    // if false throw an error
     if(!gadget){
         throw new Error('An Error Occured')
     }
+    // managing the text
     gadget.opinion = gadget.opinion.replace(/\n/g, '<br />')
     gadget.summary = gadget.summary.replace(/\n/g, '<br />')
     return (
+        // lasly the gadget variable with the value of getGadget i pass it in image, h1, and p element to show the the image and title and so on..
         <>
             <header className = " text-white">
                <div className =" flex justify-center items-center" >
