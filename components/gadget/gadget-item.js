@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 
 export default function GadgetItem({ title, slug, image, summary, creator }) {
+  console.log(image); 
   return (
     <article className = " text-white m-5 bg-stone-800 py-5 px-2 w-[600px] rounded-lg" >
       <header className = " flex justify-center items-center flex-col">
