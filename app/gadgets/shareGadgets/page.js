@@ -1,4 +1,6 @@
+'use client'
 import ImagePicker from "@/components/images/image-picker";
+import { sharGadgets } from "@/lib/action";
 export default function ShareGadgetPage() {
 
     const classes = "bg-gray-400 font-semibold rounded focus:outline-none focus:ring-2 focus:ring-neutral-600 px-2 py-1 focus:outline-neutral-ring-neutral-600 w-[25rem]"
@@ -12,7 +14,7 @@ export default function ShareGadgetPage() {
         <p className = " text-gray-500 font-semibold text-lg">Or any other gadgets you feel needs sharing!</p>
       </header>
       <main className = " text-white flex justify-center items-center " >
-        <form >
+        <form action = {sharGadgets}>
           <div className = " flex gap-4 my-5">
             <p className = " flex flex-col">
               <label htmlFor = "name" className = " text-xl font-bold mb-1 uppercase text-gray-500" >Your name</label>
@@ -32,10 +34,10 @@ export default function ShareGadgetPage() {
             <input type="text" id="summary" name="summary" required  className = {classess} />
           </p>
           <p  className = "flex flex-col mb-3">
-            <label htmlFor="instructions" className = " text-xl font-bold mb-1 uppercase text-gray-500">Instructions</label>
+            <label htmlFor="opinion" className = " text-xl font-bold mb-1 uppercase text-gray-500">Opinion</label>
             <textarea
-              id="instructions"
-              name="instructions"
+              id="opinion"
+              name="opinion"
               rows="10"
               required
               className = " rounded-md bg-neutral-500 font-bold px-4 py-2 text-xl "
@@ -43,7 +45,7 @@ export default function ShareGadgetPage() {
           </p>
           <ImagePicker label= "Your Image" name= "image" />
           <p className = " flex items-end justify-end my-5">
-            <button type="submit" className = " bg-neutral-700 px-3 py-1 rounded font-bold uppercase">
+            <button  type="submit" className = " bg-neutral-700 px-3 py-1 rounded font-bold uppercase">
                 Share Gadgets
             </button>
           </p>

@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useState, useRef } from "react"
+import classes from './image-picker.module.css'
 
 const ImagePicker = ({label,name}) => {
     //set useState 
@@ -11,7 +12,7 @@ const ImagePicker = ({label,name}) => {
 
     const handleButtonImage = () => {
         // use .click to open the file 
-        imageInput.curent.click()
+        imageInput.current.click()
     }
 
     const handleSelectImage = (e) =>{
@@ -37,13 +38,13 @@ const ImagePicker = ({label,name}) => {
 
   
     return(
-        <div>
-            <h1>
+        <div className  = {classes.picker}>
+            <h1 className = " uppercase font-bold ">
                 {label}
             </h1>
-            <div>
-                <div>
-                    {!imagePicker && <p className = " text-white">NO Image yeat</p>}
+            <div className ={classes.control}>
+                <div className ={classes.preview}>
+                    {!imagePicker && <p className = " text-white">No Image yeat</p>}
                     {
                         imagePicker && (
                             <Image src = {imagePicker} alt = "AN IMAGE"  width={500} height={500} className = " w-[10rem]" />
@@ -51,7 +52,8 @@ const ImagePicker = ({label,name}) => {
                     }
                 </div>
 
-                <input 
+                <input
+                    className = {classes.input} 
                     type = "file"
                     id = {name}
                     accept = "image/png, image/jpeg"
@@ -62,7 +64,7 @@ const ImagePicker = ({label,name}) => {
                     onChange = {handleSelectImage}
                 />
 
-                <button type = "button" onClick = {handleButtonImage}>
+                <button  className = {classes.button} type = "button" onClick = {handleButtonImage}>
                     Pick and Image
                 </button>
             </div>
