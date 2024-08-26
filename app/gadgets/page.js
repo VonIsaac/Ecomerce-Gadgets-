@@ -2,9 +2,15 @@
 import Link from "next/link"
 import GadgetGrid from "@/components/gadget/gadget-grid"
 import { getGadgets } from "@/lib/gadgets"
+import { Suspense } from "react"
 const MainGadgets = async () => {
-    // Then use async await as well
-    const gadget = await getGadgets()
+    // Then use async await as well 
+    async function  Gadget(){
+        const gadgets = await getGadgets()
+        return <GadgetGrid gadget={gadgets} />
+    }
+
+
     return (
         <>
             <header className = "  text-white">
@@ -24,8 +30,10 @@ const MainGadgets = async () => {
             </header>
 
             {/* then import the component to this components and use the props then pass the gadget await  */}
-            <main className = " flex justify-center items-center">
-                <GadgetGrid gadget={gadget} />
+            <main className = " flex justify-center items-center px-5">
+                <Suspense fallback = {<p className =" text-center text-gray-600 font-bold text-xl">Fetching Gadgets...</p>}>
+                    <Gadget />
+                </Suspense>
             </main>
         
         
